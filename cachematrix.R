@@ -1,8 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
-
+### This function sets the value of the matrix, gets its value,
+### sets the value of the inverse matrix and
+### gets its value
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y){
@@ -17,7 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+### Calculating the inverse of the matrix created with the first function
+### then using cached result if available, including a message when doing so
+    
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
   if(!is.null(inv)){
